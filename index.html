@@ -4,29 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.background-video.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Paul's Music</title>
+    <title>#</title>
 </head>
 <body>
     
 <header>
     <a href="./index.html">home</a>
-    <a href="./playlist.html">playlist</a>
-    <a href="./recomend.html">recs</a>
+    <a href="./recipes.html">recipes</a>
+    <a href="./tools.html">tools</a>
 </header>
 
-<section id="profile">
-    <span id="avatar"></span>
-    <h2><span id="name">name</span></h2>
-    <p id="follows"><span id="count">#</span> followers</p>
-    <a id="url" href="#">link</a>
+<section class="banner">
 
+    <h1>espresso</h1>
+
+    <div class="jquery-background-video-wrapper">
+        <div class="element-with-video-bg jquery-background-video-wrapper">
+            <video class="my-background-video jquery-background-video" loop autoplay muted  playsinline poster="./media/video/bannervideo.jpg">
+                <source src="./media/video/bannervideo.mp4" type="video/mp4">
+            </video>
+            
+        </div>
+    </div>
 
 </section>
 
+<main>
+
+    <div class="item">
+        <h2>why?</h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam excepturi magni, cupiditate fugit debitis sequi recusandae alias officiis eius placeat! Quod necessitatibus autem nobis saepe nostrum ad vel officiis voluptates.
+        Tenetur illum vitae, quia sunt, dolores assumenda delectus odit voluptates iure quisquam fugiat voluptatem ab fugit saepe alias. Harum repellendus quo iusto consectetur exercitationem explicabo pariatur ad, placeat quidem ut.
+        </p>
+    </div>
+
+    <div class="item"></div>
+    <div class="item"></div>
+
+    <div class="item">
+        <h2>lame?</h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, adipisci tempora. Culpa quisquam alias omnis eaque repudiandae sed fugiat saepe vel, consequuntur dicta aliquid nam at similique repellat eum reiciendis?
+        Nisi unde, reprehenderit fugit nihil suscipit nesciunt quam tempore nam nulla quisquam sunt non amet, enim facilis quis id sit autem? Fugiat itaque molestias consectetur quam recusandae, fugit amet placeat.</p>
+    </div>
+
+</main>
+
+<!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- background video -->
+<script src="js/bg-video/jquery.background-video.js"></script>
 
 <script src="./js/script.js"></script>
 
