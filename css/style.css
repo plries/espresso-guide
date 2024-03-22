@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Inter Tight, Helvetica, sans-serif;
+    font-size: 1.2rem;
     background-color: rgb(255, 255, 255);
 }
 
@@ -31,36 +32,84 @@ header a:hover {
 }
 
 .banner {
-    width: 100%;
-    height: 40vw;
-    overflow: hidden;
+    position: relative;
 }
 
-.my-background-video {
-    width: 100%;
-    height: 100%;
+.jquery-background-video-wrapper {
+    aspect-ratio: 16 / 4;
 }
 
 h1 {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
     font-size: 15rem;
     margin: 0;
+    line-height: 70px;
     color: white;
     mix-blend-mode: soft-light;
+    z-index: 2;
+}
+
+h1 #span {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 0;
 }
 
 main {
-    margin: 3vw 2vw 0 2vw;
+    margin: 1vw 2vw;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 2vw;
 }
 
-.item {
-    width: 45%;
-    padding: 1vw;
+#callout{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 5vw 0 5vw 0;
 }
+
+#callout p {
+    
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1.8rem;
+    width: 90%;
+}
+
+#callout svg {
+    scale: 4;
+    rotate: 180deg;
+    position: absolute;  
+}
+
+.container {
+    width: 50%;
+    margin: 0 0 5vw 0;
+}
+
+.questions {
+    width: 50%;
+}
+
+.box {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 2vw 2vw;
+    margin: 5vw 0 5vw 0;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+.q1 {
+    left: 0;
+}
+
+.q2 {
+    transform: translateX(71%);
+}
+

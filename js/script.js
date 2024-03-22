@@ -1,9 +1,9 @@
 $(document).ready(function(){
   
-  $(".banner-video").bgVideo({
+  $(".my-background-video").bgVideo({
 
       pauseAfter: 0,
-      fadeIn: 0,
+      fadeIn: true,
       showPausePlay: false
 
   });
