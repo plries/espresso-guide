@@ -11,18 +11,27 @@
     <title>a beginner's guide to espresso</title>
 </head>
 <body>
-    
+
+<div id="page">
+
 <header>
-    <a href="./index.html">home</a>
-    <a href="./tools.html">tools</a>
-    <a href="./brew.html">brew</a>
+    <div id="header">
+            <a href="#" onclick="toggleMenu()"><svg id="hmenu" xmlns="http://www.w3.org/2000/svg" height="24" width="21" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></svg></a>
+    </div>
+    <nav id="menu">
+            <ul>
+                <li><a id="selected" href="./index.html">home</a></li>
+                <li><a href="./tools.html">tools</a></li>
+                <li><a href="./brew.html">brew</a></li>
+            </ul>
+    </nav>
 </header>
 
 <section class="banner">
-    <h1>
-        <span id="span">a beginner's guide to</span>
-        <br>espresso
-    </h1>
+    <div class="bannerText">
+        <h2>a beginner's guide to</h2>
+        <h1>espresso</h1>
+    </div>
         <div class="element-with-video-bg jquery-background-video-wrapper">
           <video class="my-background-video jquery-background-video" loop autoplay muted playsinline poster="./media/video/bannervideo.jpg">
             <source src="./media/video/bannervideo.mp4" type="video/mp4">
@@ -33,12 +42,12 @@
 <main>
     <div class="questions">
         <div>
-            <div class="box" id="q1">
+            <div class="box show" id="q1">
                 <p>
                     do your mornings start with a trip to the coffee shop?
                 </p> 
             </div>
-            <div class="box" id="q2">
+            <div class="box show" id="q2">
                 <p>
                     are you tired of spending <em>$8</em> for a f***ing latte?
                 </p>
@@ -47,15 +56,15 @@
     </div>
 
 
-    <div class="answer">
+    <div class="answer show">
         <div id="ans">
             <p>
-                if your answer is <b>yes</b>, you've come to the right spot.
+                if your answer is <strong>yes</strong>, you've come to the right spot.
             </p> 
         </div>
     </div>  
 
-    <div class="quote">
+    <div class="quote show">
         <hr>
         <div id="callout">              
             <p>
@@ -69,20 +78,20 @@
     </div>
 
     <div class="intro">
-        <div id="para">
+        <div class="show" id="para">
             <p>
                 but fear not, soon-to-be coffee connesieour!
-                <br> this guide is your roadmap to unlocking the magic of espresso in the <b>comfort of your own home</b>.
+                <br> this guide is your roadmap to unlocking the magic of espresso in the <strong>comfort of your own home</strong>.
             </p>
             <p>
                 we'll break down the basics, from choosing the right equipment to pulling a perfect shot, and by the end of it, you'll be brewing barista-worthy espresso in no time! 
             </p>
-            <div id="cta">
-                <p>
-                    so grab your mugs and let's start grinding.
-                </p>
-                <button>continue</button>
-            </div>
+        </div>
+        <div id="cta">
+            <p>
+                so grab your mugs and let's start <strong>grinding</strong>.
+            </p>
+            <button id="continue"><a href="./tools.html">continue!</a></button>
         </div>
     </div>
 </main>
@@ -90,8 +99,10 @@
 <footer>
     <a href="#">jquery</a>
     <a href="#">bg video</a>
-    <a href="#">gsap</a>
+    <a href="#">scroll reveal</a>
 </footer>
+
+</div>
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -102,8 +113,10 @@
 <!-- gsap -->
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
-<!-- gsap scrollTrigger -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<!--  -->
+
+<!-- scrollReveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
 
 <script src="./js/script.js"></script>
 

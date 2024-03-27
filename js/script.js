@@ -1,3 +1,14 @@
+// nav
+
+const menu = document.getElementById("menu");
+
+function toggleMenu() {
+        
+  menu.classList.toggle("toggleMenu");
+
+};
+
+// jQuery backgroundVideo
 $(document).ready(function(){
   
   $(".my-background-video").bgVideo({
@@ -10,44 +21,24 @@ $(document).ready(function(){
 
 });
 
-const q1 = document.querySelector("#q1");
-const q2 = document.querySelector("#q2");
-const ans = document.querySelector("#ans");
-const callout = document.querySelector(".quote");
-const intro = document.querySelector("#para");
+// scrollReveal
+const slideUp = {
+  distance: '125%',
+  origin: 'bottom',
+  opacity: 0,
+  duration: 1000,
+  interval: 300
+};
 
-window.addEventListener("scroll", show);
+const slideRight = {
+  distance: '125%',
+  origin: 'left',
+  opacity: 0,
+  duration: 1000,
+  delay: 350
+};
 
-function show(){
-    let box1 = q1.getBoundingClientRect();
-    let box2 = q2.getBoundingClientRect();
-    let box3 = ans.getBoundingClientRect()
-    let box4 = callout.getBoundingClientRect();
-    let box5 = intro.getBoundingClientRect();
-    let windowH = window.innerHeight;
+ScrollReveal().reveal('.show', slideUp);
 
-    if(box1.top < windowH/1.25) {
-        q1.style.opacity = "1";
-        q1.style.transform = "translateY(0vw)";
-    }
+ScrollReveal().reveal('#cta', slideRight);
 
-    if(box2.top < windowH/1.25) {
-      q2.style.opacity = "1";
-      q2.style.transform = "translateY(0vw)";
-    }
-    
-    if(box3.top < windowH/1.25) {
-      ans.style.opacity = "1";
-      ans.style.transform = "translateY(0vw)";
-    }
-    
-    if(box4.top < windowH/1.5) {
-      callout.style.opacity = "1";
-      callout.style.transform = "translateY(0vw)";
-    }
-
-    if(box5.top < windowH/1.25) {
-      intro.style.opacity = "1";
-      intro.style.transform = "translateY(0vw)";
-    }
-}
