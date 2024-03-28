@@ -4,20 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.background-video.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>#</title>
+    
+    <title>how to brew</title>
 </head>
 <body>
-    
+
+<div id="page">
+
 <header>
-    <a href="./index.html">home</a>
-    <a href="./recipes.html">recipes</a>
-    <a href="./tools.html">tools</a>
+    <div id="header">
+            <a id="menu" href="#"><svg id="hmenu" xmlns="http://www.w3.org/2000/svg" height="24" width="21" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></svg></a>
+    </div>
+    <nav id="menu">
+            <ul>
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./tools.html">tools</a></li>
+                <li><a id="selected" href="./brew.html">brew</a></li>
+            </ul>
+    </nav>
 </header>
 
+<section class="banner">
+    <div class="bannerText">
+        <h1>brew</h1>
+    </div>
+        <div class="element-with-video-bg jquery-background-video-wrapper">
+          <video class="my-background-video jquery-background-video" loop autoplay muted playsinline poster="./media/video/brewbannervideo.jpg">
+            <source src="./media/video/brewbannervideo.mp4" type="video/mp4">
+            </video>
+        </div>  
+</section>  
 
-    <script src="./js/script.js"></script>
+<section id="body"> 
+
+    <!-- <div class="beans" id="bean1"></div>
+    <div class="beans" id="bean2"></div>
+    <div class="beans" id="bean3"></div>
+    <div class="beans" id="bean4"></div> -->
+
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+        <h1>1. prepare your espresso</h1>
+        <p>make sure your espresso machine is turned on and properly heated up. it's crucial for consistency and flavor.</p>
+    </div>
+    <div class="swiper-slide">
+        <h1>2. grind your coffee</h1>
+        <p>make sure your espresso machine is turned on and properly heated up. it's crucial for consistency and flavor.</p>
+    </div>
+    <div class="swiper-slide">
+        <h1>3. preheat your portafilter and cups</h1>
+        <p>run some hot water through your portafilter and cups to preheat them. this helps maintain the optimal temperature for extraction.</p>
+    </div>
+    <div class="swiper-slide">
+        <h1>4. dose and distribute coffee</h1>
+        <p>measure out the appropriate amount of coffee grounds for your portafilter. distribute the grounds evenly using a distribution tool (wdt) or by tapping and leveling with your fingers.</p>
+    </div>
+    <div class="swiper-slide">
+        <h1>5. tamp the coffee</h1>
+        <p>use a tamper to press down on the coffee grounds in the portafilter with firm and even pressure. the goal is to create a level and compact coffee puck.</p>
+    </div>
+    <div class="swiper-slide">
+        <h1>6. lock in the portafilter</h1>
+        <p>insert the portafilter into the espresso machine's group head and lock it in securely.</p>
+    </div>
+    <div class="swiper-slide">
+        <h1>7. start the shot</h1>
+        <p>place your preheated cup(s) under the portafilter spouts. start the shot immediately after locking in the portafilter.</p>
+    </div>
+    <div class="swiper-slide">
+        <h1>8. monitor the extraction</h1>
+        <p>watch the espresso as it flows into the cup. the ideal extraction time is typically around 25-30 seconds, with a total volume of 1 to 1.5 ounces (about 30-45ml).</p>
+    </div>
+    <div class="swiper-slide">
+        <h1>9. evaluate and adjust</h1>
+        <p>pay attention to the color, crema, and taste of the espresso shot. adjust the grind size, dose, or extraction time as needed to achieve the desired flavor profile.</p>
+    </div>
+
+</div>
+ 
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</section>
+
+<footer>
+    <a href="#">jquery</a>
+    <a href="#">bg video</a>
+    <a href="#">scroll reveal</a>
+</footer>
+
+</section>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- jQuery background video -->
+<script src="js/bg-video/jquery.background-video.js"></script>
+
+<!-- gsap -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"> 
+</script>
+
+<!-- gsap scrollTrigger -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<!-- scrollReveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="./js/script.js"></script>
 
 </body>
 </html>

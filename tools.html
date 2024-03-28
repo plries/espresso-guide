@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>a beginner's guide to espresso</title>
+    <title>espresso tools</title>
 </head>
 <body>
 
@@ -16,7 +16,7 @@
 
 <header>
     <div id="header">
-            <a href="#" onclick="toggleMenu()"><svg id="hmenu" xmlns="http://www.w3.org/2000/svg" height="24" width="21" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></svg></a>
+            <a id="menu" href="#"><svg id="hmenu" xmlns="http://www.w3.org/2000/svg" height="24" width="21" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></svg></a>
     </div>
     <nav id="menu">
             <ul>
@@ -38,35 +38,117 @@
         </div>  
 </section>  
 
-<main>
+<section id="body">
 
-    <p>
+<div id="disclaimer">
+    <h2>disclaimer</h2>
+        <p>
+            coffee at-home can seem expensive at face value... and it is.
+        </p>
+        <p>
+            BUT its a long term investment! and if it means having a coffee everyday, the way you like it, right at home, then i'd say its something worth saving up for. plus, it saves you from throwing money at big corporations each day before work!
+        </p>
+        <p>
+            and remember, you don't have to buy all these tools in one go. in fact, you don't need <em>all</em> these tools. once your espresso tastes the way you like it, there's no point in buying more tools and involving more factors. 
+        </p>
+</div>
 
-    </p>
-
-    <div class="card">
+<div id="cards">
+    <div class="card showTool">
+        <div>
+            <img src="./media/tools/machine.png" alt="Breville BES870XL Barista Express Espresso Machine">
+        </div>
         <div>
             <h2>espresso machine</h2>
-            <p>so, this bad boy's like the engine of your espresso game. it blasts hot water through finely-ground coffee to make that intense, flavorful shot we all love. comes in all sorts, from hands-on to push-button magic.</p>
+                <p class="priority">priority: 
+                    <span class="red">⦿⦿⦿</span>
+                    <br>
+                    <i>you probably need this</i>
+                </p>
+            <p>this bad boy's like the engine of your espresso game. it blasts hot water through finely-ground coffee to make that intense, flavorful shot we all love. comes in all sorts, from hands-on to push-button magic.</p>
             <p>you can find them ranging from manual to super fancy automatic ones. price-wise, you can snag a basic manual for around $50, but if you're feeling fancy, those automatic ones can run you up to $2000. if you're looking for a solid pick, check out the <strong>breville barista express.</strong></p>
         </div>
+    </div>
+
+    <div class="card showTool">
         <div>
-            <img src="./media/tools/breville.png" alt="Breville BES870XL Barista Express Espresso Machine">
+            <img src="./media/tools/portafilter.jpg" alt="Rancilio Silvia's Bottomless Portafilter">
+        </div>
+        <div>
+            <h2>bottomless portafilter</h2>
+                <p class="priority">priority: 
+                    <span class="orange">⦿⦿⦾</span>
+                    <br>
+                    <i>necessary to diagnose your shot</i>
+                </p>
+            <p>find out what's wrong why your espresso shots taste funky with a bottomless portafilter! it's like the coffee grounds' cozy home on your espresso machine. this metal doodad holds the grounds while water works its magic, making sure every sip's packed with flavor.</p>
+            <p>if you're in the market for an extra or replacement, you can find them anywhere from $20 for a basic one to a hundred or more for the fancy stuff. a good pick? the <strong>rancilio silvia's</strong> got you covered.</p>
         </div>
     </div>
 
-    <div class="card">
+    <div class="card showTool">
         <div>
-            <img src="./media/tools/portafilter.jpg" alt="Rancilio Silvia's Portafilter">
+            <img src="./media/tools/wdt.jpg" alt="Normcore WDT Distribution Tool">
         </div>
         <div>
-            <h2>portafilter</h2>
-            <p>picture this: it's like the coffee grounds' cozy home on your espresso machine. this metal doodad holds the grounds while water works its magic, making sure every sip's packed with flavor.</p>
-            <p>if you're in the market for an extra or replacement, you can find 'em anywhere from $20 for a basic one to a hundred or more for the fancy stuff. a good pick? the <strong>rancilio silvia's</strong> got you covered.</p>
+            <h2>wdt tool</h2>
+            <p class="priority">priority: 
+                <span class="orange">⦿⦿⦾</span>
+                <br>
+                <i>ensures that all of your coffee is fully extracted</i>
+            </p>
+            <p>this pointy octopus stands for "weiss distribution technique," and it's all about leveling out your coffee grounds in the portafilter before tamping. it ensures a more even extraction, giving you a tastier shot. </p>
+            <p>prices for wdt tools range from $10 to $40, depending on the brand and materials used. If you're looking for a well-received and reliable one, consider the <strong>normcore wdt distribution tool v2</strong>.</p>
         </div>
     </div>
 
-</main>
+    <div class="card showTool">
+        <div>
+            <img src="./media/tools/tamper.jpg" alt="LuxHaus Calibrated Espresso Tamper">
+        </div>
+        <div>
+            <h2>espresso tamper</h2>
+            <p class="priority">priority: 
+                <span class="green">⦿⦾⦾</span>
+                <br>
+                <i>most machines come with a decent tamper</i>
+            </p>
+            <p>this little tool's all about giving those coffee grounds a firm but friendly pat-down in the portafilter. it's like the bouncer at the coffee party, making sure everything's packed in just right for a tasty shot.</p>
+            <p>prices? you can grab a basic one for about $15, but if you want something fancy, check out the <strong>luxhaus calibrated espresso tamper</strong> for around $50.</p>
+        </div>
+    </div>
+
+    <div class="card showTool">
+        <div>
+            <img src="./media/tools/scale.png" alt="Hario V60 Drip Coffee Scale">
+        </div>
+        <div>
+            <h2>coffee scale</h2>
+            <p class="priority">priority: 
+                <span class="green">⦿⦾⦾</span>
+                <br>
+                <i>ratios are just a general guideline, go off taste!</i>
+            </p>
+            <p>your trusty sidekick for getting that coffee-to-water ratio (1:1) just right. it helps you measure those coffee grounds and water down to the gram, so every shot's a winner—bonus points if it has a built-in timer!</p>
+            <p>you can snag a decent digital one for around $20 to $30, but if you want top-notch accuracy, check out the <strong>hario v60 drip coffee scale</strong> for around $70.</p>
+        </div>
+    </div>
+
+    <div id="legend">
+        <p class="priority">high priority: 
+            <span class="red">⦿⦿⦿</span>
+        </p>
+        <p class="priority">medium priority: 
+            <span class="orange">⦿⦿⦾</span>
+        </p>
+        <p class="priority">low priority: 
+            <span class="green">⦿⦾⦾</span>
+        </p>
+    </div>
+
+</div>
+    
+</section>
 
 <footer>
     <a href="#">jquery</a>
@@ -83,7 +165,11 @@
 <script src="js/bg-video/jquery.background-video.js"></script>
 
 <!-- gsap -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"> 
+</script>
+
+<!-- gsap scrollTrigger -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
 <!-- scrollReveal -->
 <script src="https://unpkg.com/scrollreveal"></script>
