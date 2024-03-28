@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/jquery.background-video.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/swiper.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -42,58 +42,85 @@
 
 <section id="body"> 
 
-    <!-- <div class="beans" id="bean1"></div>
-    <div class="beans" id="bean2"></div>
-    <div class="beans" id="bean3"></div>
-    <div class="beans" id="bean4"></div> -->
-
+    <div class="coffeebeans">
+        <div class="beans" id="bean1"></div>
+        <div class="beans" id="bean6"></div>
+        <div class="beans" id="bean4"></div>
+    </div>
+    
 <div class="swiper">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide">
-        <h1>1. prepare your espresso</h1>
-        <p>make sure your espresso machine is turned on and properly heated up. it's crucial for consistency and flavor.</p>
+        <div class="steps">
+            <h1>1. prepare your espresso</h1>
+            <p>make sure your espresso machine is turned on and properly heated up. this is crucial for consistency and flavor.</p>
+        </div>
     </div>
     <div class="swiper-slide">
-        <h1>2. grind your coffee</h1>
-        <p>make sure your espresso machine is turned on and properly heated up. it's crucial for consistency and flavor.</p>
+        <div class="steps">
+            <h1>2. grind your coffee</h1>
+            <p>grind fresh coffee beans to a fine consistency using a burr grinder. the grind size should be adjusted according to your machine and your coffee beans.</p>
+            <p class="tip"><i>finding the right grind size for your beans comes through trial and error!</i></p>
+        </div>
     </div>
     <div class="swiper-slide">
-        <h1>3. preheat your portafilter and cups</h1>
-        <p>run some hot water through your portafilter and cups to preheat them. this helps maintain the optimal temperature for extraction.</p>
+        <div class="steps">
+            <h1>3. preheat your portafilter and cups</h1>
+            <p>run some hot water through your portafilter and cups to preheat them. this helps maintain the optimal temperature for extraction.</p>
+        </div> 
     </div>
     <div class="swiper-slide">
-        <h1>4. dose and distribute coffee</h1>
-        <p>measure out the appropriate amount of coffee grounds for your portafilter. distribute the grounds evenly using a distribution tool (wdt) or by tapping and leveling with your fingers.</p>
+        <div class="steps">
+            <h1>4. dose and distribute coffee</h1>
+            <p>measure out the appropriate amount of coffee grounds for your portafilter. distribute the grounds evenly using a distribution tool (wdt) or by tapping and leveling with your fingers.</p>
+        </div>
     </div>
     <div class="swiper-slide">
-        <h1>5. tamp the coffee</h1>
-        <p>use a tamper to press down on the coffee grounds in the portafilter with firm and even pressure. the goal is to create a level and compact coffee puck.</p>
+        <div class="steps">
+            <h1>5. tamp the coffee</h1>
+            <p>use a tamper to press down on the coffee grounds in the portafilter with firm and even pressure. the goal is to create a level and compact coffee puck.</p>   
+        </div>
     </div>
     <div class="swiper-slide">
-        <h1>6. lock in the portafilter</h1>
-        <p>insert the portafilter into the espresso machine's group head and lock it in securely.</p>
+        <div class="steps">
+            <h1>6. lock in the portafilter</h1>
+            <p>insert the portafilter into the espresso machine's group head and lock it in securely.</p>
+        </div>
     </div>
     <div class="swiper-slide">
-        <h1>7. start the shot</h1>
-        <p>place your preheated cup(s) under the portafilter spouts. start the shot immediately after locking in the portafilter.</p>
+        <div class="steps">
+            <h1>7. start the shot</h1>
+            <p>place your preheated cup(s) under the    portafilter spouts. start the shot immediately after locking in the portafilter.</p>
+        </div>
     </div>
     <div class="swiper-slide">
-        <h1>8. monitor the extraction</h1>
-        <p>watch the espresso as it flows into the cup. the ideal extraction time is typically around 25-30 seconds, with a total volume of 1 to 1.5 ounces (about 30-45ml).</p>
+        <div class="steps">
+            <h1>8. monitor the extraction</h1>
+            <p>watch the espresso as it flows into the cup. the ideal extraction time is typically around 25-30 seconds, with a total volume of 1 to 1.5 ounces (about 30-45ml).</p>
+        </div>
     </div>
     <div class="swiper-slide">
-        <h1>9. evaluate and adjust</h1>
-        <p>pay attention to the color, crema, and taste of the espresso shot. adjust the grind size, dose, or extraction time as needed to achieve the desired flavor profile.</p>
+        <div class="steps">
+            <h1>9. evaluate and adjust</h1>
+            <p>pay attention to the color, crema, and taste of the espresso shot. adjust the grind size, dose, or extraction time as needed to achieve the desired flavor profile.</p>
+        </div>
     </div>
+</div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 
 </div>
- 
-  <div class="swiper-pagination"></div>
-
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+    
+<div class="coffeebeans">
+    <div class="beans" id="bean3"></div>
+    <div class="beans" id="bean2"></div>
+    <div class="beans" id="bean5"></div>
+</div>
 
 </section>
 

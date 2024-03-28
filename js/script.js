@@ -67,7 +67,7 @@ var rotate = gsap.timeline({
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
 
   // If we need pagination
@@ -81,4 +81,7 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
+  scrollbar: {
+    el: '.swiper-scrollbar'
+  }
 });
