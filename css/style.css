@@ -8,6 +8,14 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+.darkmode-layer {
+    z-index: 0;
+}
+
+.darkmode-toggle {
+    z-index: 500;
+}
+
 #hmenu  {
     display: none;
 }
@@ -23,6 +31,7 @@ nav ul {
     justify-content: center;
     align-items: center;
     gap: 1vw;
+    padding: 0;
 }
 
 nav ul li {
@@ -168,6 +177,7 @@ footer {
     border-top: black 1px solid;
     height: 150px;
     gap: 2vw;
+    z-index: 3;
 }
 
 footer a {
@@ -186,6 +196,28 @@ footer a {
     flex-direction: column;
     width: 90%;
     align-items: center;
+}
+
+#filters {
+    width: 90%;
+}
+
+#filters h3 {
+    margin-bottom: 10px;
+}
+
+#filters button{ 
+    background-color: black;
+    border-radius: 50px;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+#filters button:focus {
+    background-color: rgb(52, 106, 52);
 }
 
 .card {
@@ -273,6 +305,7 @@ footer a {
     width: 4.1vw;
     float: right;
     margin-top: 1vw;
+    rotate: 30deg;
 }
 
 #bean4 {
@@ -297,6 +330,7 @@ footer a {
     width: 3.8vw;
     margin-top: -1vw;
     margin-left: 19vw;
+    rotate: 30deg;
 }
 
 .tip {
@@ -308,6 +342,7 @@ footer a {
     width: 100%;
     height: 500px;
     background-color: rgb(245, 245, 245);
+    z-index: -1;
 }
 
 h1 {

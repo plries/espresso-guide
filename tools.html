@@ -53,107 +53,107 @@
         </p>
 </div>
 
-<div id="cards">
-    <div class="card showTool">
-        <div>
-            <img src="./media/tools/machine.png" alt="Breville BES870XL Barista Express Espresso Machine">
-        </div>
-        <div>
-            <h2>espresso machine</h2>
-                <p class="priority">priority: 
-                    <span class="red">⦿⦿⦿</span>
-                    <br>
-                    <i>you probably need this</i>
-                </p>
-            <p>this bad boy's like the engine of your espresso game. it blasts hot water through finely-ground coffee to make that intense, flavorful shot we all love. comes in all sorts, from hands-on to push-button magic.</p>
-            <p>you can find them ranging from manual to super fancy automatic ones. price-wise, you can snag a basic manual for around $50, but if you're feeling fancy, those automatic ones can run you up to $2000. if you're looking for a solid pick, check out the <strong>breville barista express.</strong></p>
-        </div>
-    </div>
 
-    <div class="card showTool">
-        <div>
-            <img src="./media/tools/portafilter.jpg" alt="Rancilio Silvia's Bottomless Portafilter">
+<div id="filters" class="button-group filter-button-group">
+    <h3>filters</h3>
+    <button data-filter=".high">high priority</button>
+    <button data-filter=".medium">medium priority</button>
+    <button data-filter=".low">low priority</button>
+    <button data-filter="*">clear</button>
+</div>
+
+    <div id="cards">
+
+        <div class="card high" data-category="high">
+            <div>
+                <img src="./media/tools/machine.png" alt="Breville BES870XL Barista Express Espresso Machine">
+            </div>
+            <div>
+                <h2>espresso machine</h2>
+                    <p class="priority">priority: 
+                        <span class="red">⦿⦿⦿</span>
+                        <br>
+                        <i>you probably need this</i>
+                    </p>
+                <p>this bad boy's like the engine of your espresso game. it blasts hot water through finely-ground coffee to make that intense, flavorful shot we all love. comes in all sorts, from hands-on to push-button magic.</p>
+                <p>you can find them ranging from manual to super fancy automatic ones. price-wise, you can snag a basic manual for around $50, but if you're feeling fancy, those automatic ones can run you up to $2000. if you're looking for a solid pick, check out the <strong>breville barista express.</strong></p>
+            </div>
         </div>
-        <div>
-            <h2>bottomless portafilter</h2>
+
+        <div class="card medium" data-category="medium">
+            <div>
+                <img src="./media/tools/portafilter.jpg" alt="Rancilio Silvia's Bottomless Portafilter">
+            </div>
+            <div>
+                <h2>bottomless portafilter</h2>
+                    <p class="priority">priority: 
+                        <span class="orange">⦿⦿⦾</span>
+                        <br>
+                        <i>necessary to diagnose your shot</i>
+                    </p>
+                <p>find out what's wrong why your espresso shots taste funky with a bottomless portafilter! it's like the coffee grounds' cozy home on your espresso machine. this metal doodad holds the grounds while water works its magic, making sure every sip's packed with flavor.</p>
+                <p>if you're in the market for an extra or replacement, you can find them anywhere from $20 for a basic one to a hundred or more for the fancy stuff. a good pick? the <strong>rancilio silvia's</strong> got you covered.</p>
+            </div>
+        </div>
+
+        <div class="card medium" data-category="medium">
+            <div>
+                <img src="./media/tools/wdt.jpg" alt="Normcore WDT Distribution Tool">
+            </div>
+            <div>
+                <h2>wdt tool</h2>
                 <p class="priority">priority: 
                     <span class="orange">⦿⦿⦾</span>
                     <br>
-                    <i>necessary to diagnose your shot</i>
+                    <i>ensures that all of your coffee is fully extracted</i>
                 </p>
-            <p>find out what's wrong why your espresso shots taste funky with a bottomless portafilter! it's like the coffee grounds' cozy home on your espresso machine. this metal doodad holds the grounds while water works its magic, making sure every sip's packed with flavor.</p>
-            <p>if you're in the market for an extra or replacement, you can find them anywhere from $20 for a basic one to a hundred or more for the fancy stuff. a good pick? the <strong>rancilio silvia's</strong> got you covered.</p>
+                <p>this pointy octopus stands for "weiss distribution technique," and it's all about leveling out your coffee grounds in the portafilter before tamping. it ensures a more even extraction, giving you a tastier shot. </p>
+                <p>prices for wdt tools range from $10 to $40, depending on the brand and materials used. If you're looking for a well-received and reliable one, consider the <strong>normcore wdt distribution tool v2</strong>.</p>
+            </div>
+        </div>
+
+        <div class="card low" data-category="low">
+            <div>
+                <img src="./media/tools/tamper.jpg" alt="LuxHaus Calibrated Espresso Tamper">
+            </div>
+            <div>
+                <h2>espresso tamper</h2>
+                <p class="priority">priority: 
+                    <span class="green">⦿⦾⦾</span>
+                    <br>
+                    <i>most machines come with a decent tamper</i>
+                </p>
+                <p>this little tool's all about giving those coffee grounds a firm but friendly pat-down in the portafilter. it's like the bouncer at the coffee party, making sure everything's packed in just right for a tasty shot.</p>
+                <p>prices? you can grab a basic one for about $15, but if you want something fancy, check out the <strong>luxhaus calibrated espresso tamper</strong> for around $50.</p>
+            </div>
+        </div>
+
+        <div class="card low" data-category="low">
+            <div>
+                <img src="./media/tools/scale.png" alt="Hario V60 Drip Coffee Scale">
+            </div>
+            <div>
+                <h2>coffee scale</h2>
+                <p class="priority">priority: 
+                    <span class="green">⦿⦾⦾</span>
+                    <br>
+                    <i>ratios are just a general guideline, go off taste!</i>
+                </p>
+                <p>your trusty sidekick for getting that coffee-to-water ratio (1:1) just right. it helps you measure those coffee grounds and water down to the gram, so every shot's a winner—bonus points if it has a built-in timer!</p>
+                <p>you can snag a decent digital one for around $20 to $30, but if you want top-notch accuracy, check out the <strong>hario v60 drip coffee scale</strong> for around $70.</p>
+            </div>
         </div>
     </div>
-
-    <div class="card showTool">
-        <div>
-            <img src="./media/tools/wdt.jpg" alt="Normcore WDT Distribution Tool">
-        </div>
-        <div>
-            <h2>wdt tool</h2>
-            <p class="priority">priority: 
-                <span class="orange">⦿⦿⦾</span>
-                <br>
-                <i>ensures that all of your coffee is fully extracted</i>
-            </p>
-            <p>this pointy octopus stands for "weiss distribution technique," and it's all about leveling out your coffee grounds in the portafilter before tamping. it ensures a more even extraction, giving you a tastier shot. </p>
-            <p>prices for wdt tools range from $10 to $40, depending on the brand and materials used. If you're looking for a well-received and reliable one, consider the <strong>normcore wdt distribution tool v2</strong>.</p>
-        </div>
-    </div>
-
-    <div class="card showTool">
-        <div>
-            <img src="./media/tools/tamper.jpg" alt="LuxHaus Calibrated Espresso Tamper">
-        </div>
-        <div>
-            <h2>espresso tamper</h2>
-            <p class="priority">priority: 
-                <span class="green">⦿⦾⦾</span>
-                <br>
-                <i>most machines come with a decent tamper</i>
-            </p>
-            <p>this little tool's all about giving those coffee grounds a firm but friendly pat-down in the portafilter. it's like the bouncer at the coffee party, making sure everything's packed in just right for a tasty shot.</p>
-            <p>prices? you can grab a basic one for about $15, but if you want something fancy, check out the <strong>luxhaus calibrated espresso tamper</strong> for around $50.</p>
-        </div>
-    </div>
-
-    <div class="card showTool">
-        <div>
-            <img src="./media/tools/scale.png" alt="Hario V60 Drip Coffee Scale">
-        </div>
-        <div>
-            <h2>coffee scale</h2>
-            <p class="priority">priority: 
-                <span class="green">⦿⦾⦾</span>
-                <br>
-                <i>ratios are just a general guideline, go off taste!</i>
-            </p>
-            <p>your trusty sidekick for getting that coffee-to-water ratio (1:1) just right. it helps you measure those coffee grounds and water down to the gram, so every shot's a winner—bonus points if it has a built-in timer!</p>
-            <p>you can snag a decent digital one for around $20 to $30, but if you want top-notch accuracy, check out the <strong>hario v60 drip coffee scale</strong> for around $70.</p>
-        </div>
-    </div>
-
-    <div id="legend">
-        <p class="priority">high priority: 
-            <span class="red">⦿⦿⦿</span>
-        </p>
-        <p class="priority">medium priority: 
-            <span class="orange">⦿⦿⦾</span>
-        </p>
-        <p class="priority">low priority: 
-            <span class="green">⦿⦾⦾</span>
-        </p>
-    </div>
-
 </div>
-    
+
 </section>
 
 <footer>
     <a href="#">jquery</a>
     <a href="#">bg video</a>
     <a href="#">scroll reveal</a>
+    <a href="#">gsap</a>
+    <a href="#">isotope</a>
 </footer>
 
 </div>
@@ -162,19 +162,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- jQuery background video -->
-<script src="js/bg-video/jquery.background-video.js"></script>
+<script src="js/jquery.background-video.js"></script>
 
-<!-- gsap -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"> 
-</script>
-
-<!-- gsap scrollTrigger -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-
-<!-- scrollReveal -->
-<script src="https://unpkg.com/scrollreveal"></script>
+<!-- isotope -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="./node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
 
 <script src="./js/script.js"></script>
+<script src="./js/isotope.js"></script>
 
 </body>
 </html>
