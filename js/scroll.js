@@ -3,7 +3,7 @@ const slideUp = {
     origin: "bottom",
     opacity: 0,
     duration: 1000,
-    interval: 300,
+    interval: 1000,
   };
   
   const slideRight = {
@@ -11,7 +11,7 @@ const slideUp = {
     origin: "left",
     opacity: 0,
     duration: 1000,
-    delay: 350
+    delay: 550
   };
   
   

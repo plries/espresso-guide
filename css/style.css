@@ -300,9 +300,9 @@ footer a {
 }
 
 #bean3 {
-    background-image: url("../media/beans/bean3.png");
+    background-image: url("../media/beans/bean4.png");
     background-size: cover;
-    width: 4.1vw;
+    width: 5vw;
     float: right;
     margin-top: 1vw;
     rotate: 30deg;
@@ -317,7 +317,7 @@ footer a {
 }
 
 #bean5 {
-    background-image: url("../media/beans/bean1.png");
+    background-image: url("../media/beans/bean3.png");
     background-size: cover;
     width: 4vw;
     float: right;
