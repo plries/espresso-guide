@@ -8,13 +8,7 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.darkmode-layer {
-    z-index: 0;
-}
-
-.darkmode-toggle {
-    z-index: 500;
-}
+/* ----- header ----- */
 
 #hmenu  {
     display: none;
@@ -57,6 +51,8 @@ nav a:hover {
     background-color: rgb(228, 221, 216);
 }
 
+/* ----- video banner ----- */
+
 .banner {
     position: relative;
 }
@@ -88,14 +84,16 @@ nav a:hover {
     margin: 0;
 }
 
-#body{
+/* ----- banner ----- */
+
+#content {
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-/* home */
+/* ----- index ----- */
 
 .box {
     width: 40%;
@@ -168,34 +166,7 @@ nav a:hover {
     color: white
 }
 
-footer {
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(59, 51, 46);
-    border-top: black 1px solid;
-    height: 150px;
-    gap: 2vw;
-    z-index: 3;
-}
-
-footer a {
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    transition: all 0.25s ease-in-out;
-    border-radius: 50px;
-    padding: 10px 15px;
-    width: 120px;
-    background-color: rgb(59, 51, 46);
-}
-
-footer a:hover {
-    background-color: rgb(97, 86, 80);
-}
-
-/* tools */
+/* ----- tools ----- */
 
 #disclaimer {
     width: 90%;
@@ -274,14 +245,7 @@ footer a:hover {
     font-weight: 400;
 }
 
-#legend {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-}
-
-/* brew */
+/* ----- brew ----- */
 
 .coffeebeans {
     width: 70vw;
@@ -370,7 +334,6 @@ h1 {
     border-radius: 30px;
     width: 50%;
     height: fit-content;
-    /* box-shadow: 1px 1px 20px 5px rgb(0, 0, 0, 0.2); */
 }
 
 .steps p, .steps h1 {
@@ -378,71 +341,100 @@ h1 {
     margin-right: 20px;
 }
 
-/* desktop */
+/* ----- footer ----- */
+
+footer {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(59, 51, 46);
+    border-top: black 1px solid;
+    height: 150px;
+    gap: 2vw;
+    z-index: 3;
+}
+
+footer a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    transition: all 0.25s ease-in-out;
+    border-radius: 50px;
+    padding: 10px 15px;
+    width: 120px;
+    background-color: rgb(59, 51, 46);
+}
+
+footer a:hover {
+    background-color: rgb(97, 86, 80);
+}
+
+/* ----- desktop ----- */
 @media screen and (max-width: 1440px) {
 
-html {
-    font-size: 20px;
-}
+    html {
+        font-size: 20px;
+    }
 
 }
 
-/* tablet */
+/* ----- tablet ----- */
 @media screen and (max-width: 768px) {
-  
-html {
-    font-size: 18px;
-}
+    
+    html {
+        font-size: 18px;
+    }
 
-.card {
-    flex-direction: column;
-    align-items: center;
-}
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.coffeebeans {
-    display: none;
-}
+    .coffeebeans {
+        display: none;
+    }
     
 }
 
-/* mobile */
+/* ----- mobile ----- */
 @media screen and (max-width: 425px) {
-   
-html {
-    font-size: 16px;
-}
+    
+    html {
+        font-size: 16px;
+    }
 
-#header {
-    height: 50px;
-}
+    #header {
+        height: 50px;
+    }
 
-#hmenu {
-    display: block;
-    margin-left: 10px;
-    transform: translateY(55%);
-}
+    #hmenu {
+        display: block;
+        margin-left: 10px;
+        transform: translateY(55%);
+    }
 
-nav {
-    height: 0;
-    transition: all 0.5s ease-in-out;
-}
+    nav {
+        height: 0;
+        transition: all 0.5s ease-in-out;
+    }
 
-nav ul {    
-    flex-direction: column;
-    align-items: baseline;
-    margin: 0;
-    padding: 0;
-}
+    nav ul {    
+        flex-direction: column;
+        align-items: baseline;
+        margin: 0;
+        padding: 0;
+    }
 
-.toggleMenu {
-    height: 148px;
-}
+    .toggleMenu {
+        height: 148px;
+    }
 
-nav ul li {
-    padding: 15px 0 10px 0;
-    width: 100%;
-    border-top: 1px solid black;
-    text-indent: 8px;
-}
+    nav ul li {
+        padding: 15px 0 10px 0;
+        width: 100%;
+        border-top: 1px solid black;
+        text-indent: 8px;
+    }
 
 }
