@@ -27,6 +27,7 @@
     </nav>
 </header>
 
+<!-- Background Video -->
 <section class="banner">
     <div class="bannerText">
         <h1>tools</h1>
@@ -53,17 +54,22 @@
         </p>
 </div>
 
-
+<!-- Isotope / Button Group-->
 <div id="filters" class="button-group filter-button-group">
     <h3>filters</h3>
-    <button data-filter=".high">high priority</button>
-    <button data-filter=".medium">medium priority</button>
-    <button data-filter=".low">low priority</button>
+    <!-- shows all cards -->
     <button data-filter="*">all</button>
+    <!-- shows cards with ".high" class -->
+    <button data-filter=".high">high priority</button>
+    <!-- shows cards with ".medium" class -->
+    <button data-filter=".medium">medium priority</button>
+    <!-- shows cards with ".low" class -->
+    <button data-filter=".low">low priority</button>
 </div>
 
+    <!-- Isotope / Cards -->
     <div id="cards">
-
+        <!-- card with ".high" class -->
         <div class="card high" data-category="high">
             <div>
                 <img src="./media/tools/machine.png" alt="Breville BES870XL Barista Express Espresso Machine">
@@ -79,7 +85,7 @@
                 <p>you can find them ranging from manual to super fancy automatic ones. price-wise, you can snag a basic manual for around $50, but if you're feeling fancy, those automatic ones can run you up to $2000. if you're looking for a solid pick, check out the <strong>breville barista express.</strong></p>
             </div>
         </div>
-
+        <!-- card with ".medium" class -->
         <div class="card medium" data-category="medium">
             <div>
                 <img src="./media/tools/portafilter.jpg" alt="Rancilio Silvia's Bottomless Portafilter">
@@ -95,7 +101,7 @@
                 <p>if you're in the market for an extra or replacement, you can find them anywhere from $20 for a basic one to a hundred or more for the fancy stuff. a good pick? the <strong>rancilio silvia's</strong> got you covered.</p>
             </div>
         </div>
-
+        <!-- card with ".medium" class -->
         <div class="card medium" data-category="medium">
             <div>
                 <img src="./media/tools/wdt.jpg" alt="Normcore WDT Distribution Tool">
@@ -111,7 +117,7 @@
                 <p>prices for wdt tools range from $10 to $40, depending on the brand and materials used. If you're looking for a well-received and reliable one, consider the <strong>normcore wdt distribution tool v2</strong>.</p>
             </div>
         </div>
-
+        <!-- card with ".low" class -->
         <div class="card low" data-category="low">
             <div>
                 <img src="./media/tools/tamper.jpg" alt="LuxHaus Calibrated Espresso Tamper">
@@ -127,7 +133,7 @@
                 <p>prices? you can grab a basic one for about $15, but if you want something fancy, check out the <strong>luxhaus calibrated espresso tamper</strong> for around $50.</p>
             </div>
         </div>
-
+        <!-- card with ".low" class -->
         <div class="card low" data-category="low">
             <div>
                 <img src="./media/tools/scale.png" alt="Hario V60 Drip Coffee Scale">
@@ -149,11 +155,11 @@
 </section>
 
 <footer>
-    <a href="#">jquery</a>
-    <a href="#">bg video</a>
-    <a href="#">scroll reveal</a>
-    <a href="#">gsap</a>
-    <a href="#">isotope</a>
+    <a href="https://developers.google.com/speed/libraries" target="_blank">jquery</a>
+    <a href="https://github.com/BGStock/jquery-background-video" target="_blank">bg video</a>
+    <a href="https://scrollrevealjs.org/" target="_blank">scroll reveal</a>
+    <a href="https://gsap.com/" target="_blank">gsap</a>
+    <a href="https://isotope.metafizzy.co/" target="_blank">isotope</a>
 </footer>
 
 </div>
@@ -161,10 +167,10 @@
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<!-- jQuery background video -->
+<!-- jQuery Background Video -->
 <script src="js/jquery.background-video.js"></script>
 
-<!-- isotope -->
+<!-- Isotope -->
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 <script src="./node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
 

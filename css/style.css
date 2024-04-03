@@ -182,7 +182,17 @@ footer {
 
 footer a {
     text-decoration: none;
+    text-align: center;
     color: white;
+    transition: all 0.25s ease-in-out;
+    border-radius: 50px;
+    padding: 10px 15px;
+    width: 120px;
+    background-color: rgb(59, 51, 46);
+}
+
+footer a:hover {
+    background-color: rgb(97, 86, 80);
 }
 
 /* tools */
