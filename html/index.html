@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/jquery.background-video.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.background-video.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,13 +12,11 @@
 </head>
 <body>
 
-<div id="page">
-
 <header>
     <div id="header">
-            <a id="menu" href="#"><svg id="hmenu" xmlns="http://www.w3.org/2000/svg" height="24" width="21" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></svg></a>
+            <a id="menu" href="#"><svg id="hmenu" xmlns="http://www.w3.org/2000/svg" height="24" width="21" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a>
     </div>
-    <nav id="menu">
+    <nav>
             <ul>
                 <li><a id="selected" href="./index.html">home</a></li>
                 <li><a href="./tools.html">tools</a></li>
@@ -34,8 +32,8 @@
         <h1>espresso</h1>
     </div>
         <div class="element-with-video-bg jquery-background-video-wrapper">
-          <video class="my-background-video jquery-background-video" loop autoplay muted playsinline poster="./media/video/bannervideo.jpg">
-            <source src="./media/video/bannervideo.mp4" type="video/mp4">
+          <video class="my-background-video jquery-background-video" loop autoplay muted playsinline poster="../media/video/bannervideo.jpg">
+            <source src="../media/video/bannervideo.mp4" type="video/mp4">
             </video>
         </div>  
 </section>
@@ -97,7 +95,7 @@
             <p>
                 so grab your mugs and let's start <strong>grinding</strong>.
             </p>
-            <button id="continue"><a href="./tools.html">continue!</a></button>
+            <a id="continue" href="./tools.html">continue!</a>
         </div>
     </div>
 </section>
@@ -108,21 +106,20 @@
     <a href="https://scrollrevealjs.org/" target="_blank">scroll reveal</a>
     <a href="https://gsap.com/" target="_blank">gsap</a>
     <a href="https://isotope.metafizzy.co/" target="_blank">isotope</a>
+    <a href="https://swiperjs.com/" target="_blank">swiper</a>
 </footer>
-
-</div>
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <!-- jQuery Background Video -->
-<script src="js/jquery.background-video.js"></script>
+<script src="../js/jquery.background-video.js"></script>
 
 <!-- Scroll Reveal -->
 <script src="https://unpkg.com/scrollreveal"></script>
 
-<script src="./js/script.js"></script>
-<script src="./js/scroll.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/scroll.js"></script>
 
 </body>
 </html>

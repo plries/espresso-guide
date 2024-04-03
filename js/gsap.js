@@ -1,3 +1,8 @@
+// ----- GSAP Scroll Trigger -----
+
+// registers the Scroll Trigger plugin
+gsap.registerPlugin(ScrollTrigger);
+
 // sets elements with ".beans" class to transform: translateX(50%) 
 gsap.set(".beans", {xPercent:-50});
 
@@ -13,5 +18,5 @@ var rotate = gsap.timeline({
 .to(".beans", {
   // sets end state of animation to a 720deg rotation
   // allows for the elements to spin depending on scroll/scrub position
-  rotation: 720
+  rotation: 1000
 }) 

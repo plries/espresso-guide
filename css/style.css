@@ -8,6 +8,15 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+#content {
+    margin-top: 60px;
+    min-height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ----- header ----- */
 
 #hmenu  {
@@ -84,15 +93,6 @@ nav a:hover {
     margin: 0;
 }
 
-/* ----- banner ----- */
-
-#content {
-    margin-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 /* ----- index ----- */
 
 .box {
@@ -144,6 +144,7 @@ nav a:hover {
 }
 
 #continue {
+    text-decoration: none;
     float: right;
     border: none;
     border-radius: 50px;
@@ -253,30 +254,32 @@ nav a:hover {
 }
 
 #bean1, #bean2, #bean3, #bean4, #bean5, #bean6 {
-    height: 5vw;
     filter: saturate(0.5);
 }
 
 #bean1 {
     background-image: url("../media/beans/bean1.png");
     background-size: cover;
-    width: 4vw;
+    height: 4vw;
+    width: 3vw;
     float: right;
     margin-right: 4vw;
+    margin-top: 2vw;
 }
 
 #bean2 {
     background-image: url("../media/beans/bean2.png");
     background-size: cover;
+    height: 5vw;
     width: 3.8vw;
-    margin-top: 2vw;
     margin-left: 8vw;
 }
 
 #bean3 {
     background-image: url("../media/beans/bean4.png");
     background-size: cover;
-    width: 5vw;
+    height: 3vw;
+    width: 3vw;
     float: right;
     margin-top: 1vw;
     rotate: 30deg;
@@ -285,15 +288,17 @@ nav a:hover {
 #bean4 {
     background-image: url("../media/beans/bean4.png");
     background-size: cover;
-    width: 5vw;
+    height: 3.5vw;
+    width: 3.5vw;
     margin-left: 2vw;
-    margin-bottom: 1vw;
+    margin-bottom: 2vw;
 }
 
 #bean5 {
     background-image: url("../media/beans/bean3.png");
     background-size: cover;
-    width: 4vw;
+    height: 4vw;
+    width: 3.3vw;
     float: right;
     margin-right: 13vw;
 }
@@ -301,8 +306,9 @@ nav a:hover {
 #bean6 {
     background-image: url("../media/beans/bean2.png");
     background-size: cover;
+    height: 5vw;
     width: 3.8vw;
-    margin-top: -1vw;
+    margin-top: 1vw;
     margin-left: 19vw;
     rotate: 30deg;
 }
@@ -395,6 +401,14 @@ footer a:hover {
         display: none;
     }
     
+    #content {
+        min-height: 0;
+    }
+
+    footer {
+        margin-top: 60px;
+    }
+
 }
 
 /* ----- mobile ----- */
@@ -435,6 +449,11 @@ footer a:hover {
         width: 100%;
         border-top: 1px solid black;
         text-indent: 8px;
+    }
+
+    footer {
+        height: 300px;
+        flex-direction: column;
     }
 
 }
