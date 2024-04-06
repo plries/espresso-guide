@@ -338,7 +338,7 @@ h1 {
 .steps {
     border: 1px solid black;
     border-radius: 30px;
-    width: 50%;
+    width: 60%;
     height: fit-content;
 }
 
@@ -354,10 +354,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     background-color: rgb(59, 51, 46);
     border-top: black 1px solid;
     height: 150px;
-    gap: 2vw;
+    column-gap: 10px;
+    row-gap: 10px;
     z-index: 3;
 }
 
@@ -368,7 +370,7 @@ footer a {
     transition: all 0.25s ease-in-out;
     border-radius: 50px;
     padding: 10px 15px;
-    width: 120px;
+    width: 140px;
     background-color: rgb(59, 51, 46);
 }
 
