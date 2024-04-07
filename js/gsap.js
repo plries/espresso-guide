@@ -18,5 +18,5 @@ var rotate = gsap.timeline({
 .to(".beans", {
   // sets end state of animation to a 720deg rotation
   // allows for the elements to spin depending on scroll/scrub position
-  rotation: 1000
+  rotation: 720
 }) 
