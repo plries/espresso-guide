@@ -52,11 +52,11 @@
         </p>
 </div>
 
-<!-- Isotope / Button Group-->
+<!-- Isotope / Filters Button Group-->
 <div id="filters" class="button-group filter-button-group">
-    <h3>filter by priority</h3>
+    <h3>filters:</h3>
     <!-- shows all cards -->
-    <button data-filter="*">all</button>
+    <button data-filter="*">show all</button>
     <!-- shows cards with ".high" class -->
     <button data-filter=".high">high</button>
     <!-- shows cards with ".medium" class -->
@@ -65,6 +65,14 @@
     <button data-filter=".low">low</button>
 </div>
 
+<!-- Isotope / Sort Button Group -->
+<div id="sorts" class="button-group sort-by-button-group">
+    <h3>sort by:</h3>
+    <button data-sort-by="original-order">original order</button>
+    <button data-sort-by="name">name</button>
+    <button data-sort-by="number">pricing</button>
+  </div>
+  
 <!-- Isotope / Cards -->
 <div id="cards">
     <!-- card with ".high" class -->
@@ -73,14 +81,18 @@
             <img src="../media/tools/machine.png" alt="Breville BES870XL Barista Express Espresso Machine">
         </div>
         <div>
-            <h2>espresso machine</h2>
+            <h2 class="name">espresso machine</h2>
                 <p class="priority">priority: 
                     <span class="red">⦿⦿⦿</span>
                     <br>
                     <i>you probably need this</i>
                 </p>
+                <p class="price">average price: 
+                    <!-- ".number" class for sorting -->
+                    <span class="number">$500</span>
+                </p>
             <p>this bad boy's like the engine of your espresso game. it blasts hot water through finely-ground coffee to make that intense, flavorful shot we all love. comes in all sorts, from hands-on to push-button magic.</p>
-            <p>you can find them ranging from manual to super fancy automatic ones. price-wise, you can snag a basic manual for around $50, but if you're feeling fancy, those automatic ones can run you up to $2000. if you're looking for a solid pick, check out the <strong>breville barista express.</strong></p>
+            <p>you can find them ranging from manual to super fancy automatic ones. price-wise, you can snag a basic manual for around $90, but if you're feeling fancy, those automatic ones can run you up to $2000. if you're looking for a solid pick, check out the <strong>breville barista express.</strong></p>
         </div>
     </div>
     <!-- card with ".medium" class -->
@@ -89,14 +101,18 @@
             <img src="../media/tools/portafilter.jpg" alt="Rancilio Silvia's Bottomless Portafilter">
         </div>
         <div>
-            <h2>bottomless portafilter</h2>
+            <h2 class="name">bottomless portafilter</h2>
                 <p class="priority">priority: 
                     <span class="orange">⦿⦿⦾</span>
                     <br>
                     <i>necessary to diagnose your shots</i>
                 </p>
+                <p class="price">average price: 
+                    <!-- ".number" class for sorting -->
+                    <span class="number">$50</span>
+                </p>
             <p>find out what's wrong why your espresso shots taste funky with a bottomless portafilter! it's like the coffee grounds' cozy home on your espresso machine. this metal doodad holds the grounds while water works its magic, making sure every sip's packed with flavor.</p>
-            <p>if you're in the market for an extra or replacement, you can find them anywhere from $20 for a basic one to a hundred or more for the fancy stuff. a good pick? the <strong>rancilio silvia's</strong> got you covered.</p>
+            <p>if you're in the market for an extra or replacement, you can find them anywhere from $20 for a basic one to $100 or more for the fancy stuff. a good pick? the <strong>rancilio silvia's</strong> got you covered.</p>
         </div>
     </div>
     <!-- card with ".medium" class -->
@@ -105,14 +121,18 @@
             <img src="../media/tools/wdt.jpg" alt="Normcore WDT Distribution Tool">
         </div>
         <div>
-            <h2>wdt tool</h2>
+            <h2 class="name">wdt tool</h2>
             <p class="priority">priority: 
                 <span class="orange">⦿⦿⦾</span>
                 <br>
                 <i>ensures that all of your coffee is fully extracted</i>
             </p>
+            <p class="price">average price: 
+                <!-- ".number" class for sorting -->
+                <span class="number">$30</span>
+            </p>
             <p>this pointy octopus stands for "weiss distribution technique," and it's all about leveling out your coffee grounds in the portafilter before tamping. it ensures a more even extraction, giving you a tastier shot. </p>
-            <p>prices for wdt tools range from $10 to $40, depending on the brand and materials used. If you're looking for a well-received and reliable one, consider the <strong>normcore wdt distribution tool v2</strong>.</p>
+            <p>prices for wdt tools range from $20 to $40, depending on the brand and materials used. If you're looking for a well-received and reliable one, consider the <strong>normcore wdt distribution tool v2</strong>.</p>
         </div>
     </div>
     <!-- card with ".low" class -->
@@ -121,11 +141,15 @@
             <img src="../media/tools/tamper.jpg" alt="LuxHaus Calibrated Espresso Tamper">
         </div>
         <div>
-            <h2>espresso tamper</h2>
+            <h2 class="name">espresso tamper</h2>
             <p class="priority">priority: 
                 <span class="green">⦿⦾⦾</span>
                 <br>
                 <i>most machines come with a decent tamper</i>
+            </p>
+            <p class="price">average price: 
+                <!-- ".number" class for sorting -->
+                <span class="number">$30</span>
             </p>
             <p>this little tool's all about giving those coffee grounds a firm but friendly pat-down in the portafilter. it's like the bouncer at the coffee party, making sure everything's packed in just right for a tasty shot.</p>
             <p>prices? you can grab a basic one for about $15, but if you want something fancy, check out the <strong>luxhaus calibrated espresso tamper</strong> for around $50.</p>
@@ -137,11 +161,15 @@
             <img src="../media/tools/scale.png" alt="Hario V60 Drip Coffee Scale">
         </div>
         <div>
-            <h2>coffee scale</h2>
+            <h2 class="name">coffee scale</h2>
             <p class="priority">priority: 
                 <span class="green">⦿⦾⦾</span>
                 <br>
                 <i>ratios are just a general guideline, go off taste!</i>
+            </p>
+            <p class="price">average price: 
+                <!-- ".number" class for sorting -->
+                <span class="number">$25</span>
             </p>
             <p>your trusty sidekick for getting that coffee-to-water ratio just right. it helps you measure those coffee grounds and water down to the gram, so every shot's a winner—bonus points if it has a built-in timer!</p>
             <p>you can snag a decent digital one for around $20 to $30, but if you want top-notch accuracy, check out the <strong>hario v60 drip coffee scale</strong> for around $70.</p>

@@ -10,7 +10,6 @@ body {
 
 #content {
     margin-top: 60px;
-    min-height: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -180,15 +179,15 @@ nav a:hover {
     align-items: center;
 }
 
-#filters {
+#filters, #sorts{
     width: 90%;
 }
 
-#filters h3 {
+#filters h3, #sorts h3 {
     margin-bottom: 10px;
 }
 
-#filters button{ 
+#filters button, #sorts button { 
     background-color: black;
     border-radius: 50px;
     padding: 10px 15px;
@@ -198,8 +197,12 @@ nav a:hover {
     border: none;
 }
 
-#filters button:focus {
+#filters button:focus, #sorts button:focus {
     background-color: rgb(52, 106, 52);
+}
+
+#sorts {
+    margin-bottom: 10px;
 }
 
 .card {
@@ -236,7 +239,7 @@ nav a:hover {
     color: rgb(51, 152, 51);
 }
 
-.priority {
+.priority, .price {
     font-weight: 600;
     font-size: 0.8rem;
     margin-top: 0;
@@ -244,6 +247,10 @@ nav a:hover {
 
 .priority i {
     font-weight: 400;
+}
+
+.number {
+    font-weight: 500;
 }
 
 /* ----- brew ----- */
@@ -451,6 +458,13 @@ footer a:hover {
         width: 100%;
         border-top: 1px solid black;
         text-indent: 8px;
+    }
+
+    nav a {
+        background-color: rgb(255, 255, 255);
+        min-width: 3vw;
+        padding: 1vw 3vw;
+        border-radius: 3vw;
     }
 
     footer {
