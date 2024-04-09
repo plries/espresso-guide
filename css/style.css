@@ -59,11 +59,11 @@ nav a:hover {
     background-color: rgb(228, 221, 216);
 }
 
-#wordmark {
-    text-align: center;
-    font-size: 1.5rem;
+#logo {
+    display: flex;
+    justify-content: center;
     margin: 0;
-    padding: 15px 0;
+    padding: 5px 0;
     background-color: rgb(228, 221, 216);
 }
 
@@ -90,14 +90,15 @@ nav a:hover {
 }
 
 .bannerText h1 {
-    font-size: 18vw;
-    line-height: 8vw;
+    font-weight: 500;
+    font-size: 4vw;
     margin: 0;
 }
 
-.bannerText h2 {
-    font-weight: 500;
-    font-size: 4vw;
+.bannerText h1 span {
+    font-weight: 800;
+    font-size: 18vw;
+    line-height: 8vw;
     margin: 0;
 }
 
@@ -438,21 +439,21 @@ footer a:hover {
     }
 
     #header {
-        height: 50px;
+        height: 64px;
     }
 
-    #wordmark {
-        float: right;
-        margin: 15px 15px 15px 0;
-        font-size: 1rem;
-        padding: 0;
+    #logo {
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        transform: translate(-50%);
         background-color: transparent;
     }
 
     #hmenu {
         display: block;
-        margin-left: 10px;
-        transform: translateY(55%);
+        margin-left: 15px;
+        transform: translateY(80%);
     }
 
     nav {
@@ -462,15 +463,16 @@ footer a:hover {
 
     nav ul {    
         flex-direction: column;
-        align-items: baseline;
+        justify-content: center;
         transition: all 0.5s ease-in-out;
+        gap: 0;
         margin: 0;
         padding: 0;
         opacity: 0;
     }
 
     .toggleMenu {
-        height: 148px;
+        height: 152px;
     }
 
     .toggleMenu ul {
@@ -478,7 +480,7 @@ footer a:hover {
     }
 
     nav ul li {
-        padding: 15px 0 10px 0;
+        padding: 15px 0 15px 0;
         width: 100%;
         border-top: 1px solid black;
         text-indent: 8px;
