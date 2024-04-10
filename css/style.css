@@ -84,7 +84,7 @@ nav a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    mix-blend-mode: soft-light;
+    opacity: 0.7;
     margin: 0;
     z-index: 2;
 }
@@ -332,11 +332,6 @@ nav a:hover {
     margin: 50px 0;
 }
 
-h1 {
-    margin-top: 20px;
-    margin-bottom: 0;
-}
-
 .swiper-slide {
     align-items: center;
     justify-content: center;
@@ -345,13 +340,21 @@ h1 {
 .steps {
     border: 1px solid black;
     border-radius: 30px;
-    width: 60%;
+    width: 70%;
     height: fit-content;
 }
 
 .steps p, .steps h1 {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px;
+}
+
+.steps h2 {
+    color: rgb(97, 86, 80);
+    opacity: 0.75;
+    font-size: 6rem;
+    line-height: 6rem;
+    margin: 20px;
+    float: left;
 }
 
 /* ----- footer ----- */
@@ -427,8 +430,6 @@ footer a:hover {
         width: 50px;
     }
     
-    
-    
 }
 
 /* ----- mobile ----- */
@@ -440,6 +441,7 @@ footer a:hover {
 
     #header {
         height: 64px;
+        background-color: rgb(228, 221, 216);
     }
 
     #logo {
@@ -508,6 +510,15 @@ footer a:hover {
 
     #bean1, #bean5 {
         width: 32px;
+    }
+
+    .steps {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .steps h2 {
+        margin: 20px 0px 0px 20px;
     }
 
     footer {

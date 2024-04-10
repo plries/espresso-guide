@@ -11,7 +11,7 @@ var rotate = gsap.timeline({
   // when scrolling, scrub through the animation 
   // allows for animation to play forward when scrolled down, or play backward when scrolled up
   scrollTrigger:{
-    scrub: true,
+    scrub: 5
   }
 })
 // sets end point of animation for elements with ".beans" class
