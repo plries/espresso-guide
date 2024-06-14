@@ -11,8 +11,8 @@ const slideUp = {
     opacity: 0,
     // sets animation duration to 1000ms
     duration: 1000,
-    // sets time between each animation reveal to 1500ms
-    interval: 1500,
+    // sets time between each animation to 600ms
+    interval: 600
   };
   
   // when an element with class ".show" enters the viewport, apply the slideUp animation
