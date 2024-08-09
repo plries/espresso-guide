@@ -232,6 +232,12 @@ nav a:hover {
     margin-right: 20px;
 }
 
+.card .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card div img {
     width: 300px;
     scale: 0.9;
